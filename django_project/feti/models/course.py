@@ -127,4 +127,3 @@ def regenerate_landing_page(sender, instance, **kwargs):
 
 
 post_save.connect(regenerate_landing_page, sender=Course, dispatch_uid="course_landing_page")
-

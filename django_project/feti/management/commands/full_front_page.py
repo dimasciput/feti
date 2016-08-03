@@ -89,4 +89,3 @@ class Command(BaseCommand):
 
         with open(new_template_location, 'w') as new_template:
             new_template.write(rendered_landing_page.encode("UTF-8"))
-

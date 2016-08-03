@@ -40,5 +40,8 @@ def regenerate_landing_page(sender, instance, **kwargs):
     management.call_command('full_front_page')
 
 
-post_save.connect(regenerate_landing_page, sender=Provider, dispatch_uid="promary_institution_landing_page")
-
+post_save.connect(
+    regenerate_landing_page,
+    sender=Provider,
+    dispatch_uid="promary_institution_landing_page"
+)

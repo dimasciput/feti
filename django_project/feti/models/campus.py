@@ -122,7 +122,7 @@ class Campus(models.Model):
         try:
             self.address_fk
             self.address
-        except Exception as e:
+        except Exception as e:  # noqa
             from_inline = True
 
         if from_inline:

@@ -1,5 +1,5 @@
 [flake8]
-exclude = */docs/*,*/.tox/*,*/.venv/*,*/.pycharm_helpers/*
+exclude = */docs/*,*/.tox/*,*/.venv/*,*/.pycharm_helpers/*,*/migrations/*
 max-line-length = 100
 
 # E12x continuation line indentation

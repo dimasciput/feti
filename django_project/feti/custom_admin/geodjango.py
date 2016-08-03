@@ -211,7 +211,11 @@ class NestedGeoModelAdmin(admin.ModelAdmin):
         in the `widget` attribute) using the settings from the attributes set
         in this class.
         """
-        is_collection = db_field.geom_type in ('MULTIPOINT', 'MULTILINESTRING', 'MULTIPOLYGON', 'GEOMETRYCOLLECTION')
+        is_collection = db_field.geom_type in (
+            'MULTIPOINT',
+            'MULTILINESTRING',
+            'MULTIPOLYGON',
+            'GEOMETRYCOLLECTION')
         if is_collection:
             if db_field.geom_type == 'GEOMETRYCOLLECTION':
                 collection_type = 'Any'
