@@ -1,14 +1,8 @@
 # coding=utf-8
 """Model class for Education and Training Quality Assurance (ETQA)."""
 
-__author__ = 'Christian Christelis <christian@kartoza.com>'
-__date__ = '04/2015'
-__license__ = "GPL"
-__copyright__ = 'kartoza.com'
-
 from django.template import Context, loader
 from django.contrib.gis.db import models
-from django.core.validators import RegexValidator
 from django.db.models.signals import post_save
 from django.core import management
 
@@ -21,6 +15,11 @@ from feti.models.national_graduate_school_in_education import (
 from feti.models.national_certificate_vocational import (
     NationalCertificateVocational)
 from feti.models.field_of_study import FieldOfStudy
+
+__author__ = 'Christian Christelis <christian@kartoza.com>'
+__date__ = '04/2015'
+__license__ = "GPL"
+__copyright__ = 'kartoza.com'
 
 
 class Course(models.Model):
