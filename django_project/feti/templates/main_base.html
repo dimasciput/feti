@@ -56,5 +56,14 @@
 {% block js_inline %}
 {% endblock %}
 
+<script>
+    $(document).ready(function () {
+        var site_title = 'FORD 2';
+        if (document.title != site_title) {
+            document.title = site_title;
+        }
+    });
+</script>
+
 </body>
 </html>
